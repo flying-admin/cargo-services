@@ -1,0 +1,27 @@
+//Grid
+$flexboxgrid-grid-columns: 12;
+$flexboxgrid-gutter-width: 30px;
+$flexboxgrid-outer-margin: 30px;
+$flexboxgrid-breakpoints:
+  xxs 0px 100%,
+  xs 480px 100%,
+  sm 768px 100%,
+  md 991px 990px,
+  lg 1200px 1120px,
+  xl 1440px 1220px;
+
+//Colors
+$white: #fff;
+$black: #000;
+$blackish: #000;
+$primary: #000;
+$secondary: #000;
+$corporative: #000;
+$error: #000;
+$lightgrey: #000;
+$darkgrey: #000;
+
+
+//Fonts
+$font_default: "Graphik", sans-serif;
+$font_title: "Work Sans", sans-serif;

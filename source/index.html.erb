@@ -1,0 +1,17 @@
+---
+title: Proyect Index
+layout: layout
+---
+<%= partial("shared/header", :locals => {
+  :extra_classes => ''
+}) %>
+
+<div class="content__wrapper">
+<h1>Page content</h1>
+
+  <%= partial("modules/module", :locals => {
+    :extra_classes => ''
+  }) %>
+
+</div>
+<%= partial("shared/footer") %>

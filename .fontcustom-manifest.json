@@ -1,0 +1,167 @@
+{
+  "checksum": {
+    "previous": "3ca435af6893efe4a2794eab61efcf6442340e62765a4b2c5b750a6c7595f4f0",
+    "current": "3ca435af6893efe4a2794eab61efcf6442340e62765a4b2c5b750a6c7595f4f0"
+  },
+  "fonts": [
+    "./source/assets/fonts/cargo-icons.ttf",
+    "./source/assets/fonts/cargo-icons.svg",
+    "./source/assets/fonts/cargo-icons.woff",
+    "./source/assets/fonts/cargo-icons.eot",
+    "./source/assets/fonts/cargo-icons.woff2"
+  ],
+  "glyphs": {
+    "angle-left": {
+      "codepoint": 61696,
+      "source": "./source/assets/images/icons/angle-left.svg"
+    },
+    "angle-right": {
+      "codepoint": 61697,
+      "source": "./source/assets/images/icons/angle-right.svg"
+    },
+    "arrow-down": {
+      "codepoint": 61698,
+      "source": "./source/assets/images/icons/arrow-down.svg"
+    },
+    "arrow-left": {
+      "codepoint": 61699,
+      "source": "./source/assets/images/icons/arrow-left.svg"
+    },
+    "arrow-right": {
+      "codepoint": 61700,
+      "source": "./source/assets/images/icons/arrow-right.svg"
+    },
+    "check": {
+      "codepoint": 61701,
+      "source": "./source/assets/images/icons/check.svg"
+    },
+    "cross-trade": {
+      "codepoint": 61702,
+      "source": "./source/assets/images/icons/cross-trade.svg"
+    },
+    "customs": {
+      "codepoint": 61703,
+      "source": "./source/assets/images/icons/customs.svg"
+    },
+    "delivery-truck": {
+      "codepoint": 61704,
+      "source": "./source/assets/images/icons/delivery-truck.svg"
+    },
+    "download": {
+      "codepoint": 61705,
+      "source": "./source/assets/images/icons/download.svg"
+    },
+    "facebook": {
+      "codepoint": 61706,
+      "source": "./source/assets/images/icons/facebook.svg"
+    },
+    "fax": {
+      "codepoint": 61707,
+      "source": "./source/assets/images/icons/fax.svg"
+    },
+    "folder-safe": {
+      "codepoint": 61708,
+      "source": "./source/assets/images/icons/folder-safe.svg"
+    },
+    "gplus": {
+      "codepoint": 61709,
+      "source": "./source/assets/images/icons/gplus.svg"
+    },
+    "handshake": {
+      "codepoint": 61710,
+      "source": "./source/assets/images/icons/handshake.svg"
+    },
+    "idea": {
+      "codepoint": 61711,
+      "source": "./source/assets/images/icons/idea.svg"
+    },
+    "location": {
+      "codepoint": 61712,
+      "source": "./source/assets/images/icons/location.svg"
+    },
+    "lock": {
+      "codepoint": 61713,
+      "source": "./source/assets/images/icons/lock.svg"
+    },
+    "lock-bullet": {
+      "codepoint": 61714,
+      "source": "./source/assets/images/icons/lock-bullet.svg"
+    },
+    "mail": {
+      "codepoint": 61715,
+      "source": "./source/assets/images/icons/mail.svg"
+    },
+    "package-hand": {
+      "codepoint": 61716,
+      "source": "./source/assets/images/icons/package-hand.svg"
+    },
+    "phone": {
+      "codepoint": 61717,
+      "source": "./source/assets/images/icons/phone.svg"
+    },
+    "plane": {
+      "codepoint": 61718,
+      "source": "./source/assets/images/icons/plane.svg"
+    },
+    "qr-code": {
+      "codepoint": 61719,
+      "source": "./source/assets/images/icons/qr-code.svg"
+    },
+    "route": {
+      "codepoint": 61720,
+      "source": "./source/assets/images/icons/route.svg"
+    },
+    "shield": {
+      "codepoint": 61721,
+      "source": "./source/assets/images/icons/shield.svg"
+    },
+    "ship": {
+      "codepoint": 61722,
+      "source": "./source/assets/images/icons/ship.svg"
+    },
+    "twitter": {
+      "codepoint": 61723,
+      "source": "./source/assets/images/icons/twitter.svg"
+    },
+    "warehouses": {
+      "codepoint": 61724,
+      "source": "./source/assets/images/icons/warehouses.svg"
+    },
+    "weight": {
+      "codepoint": 61725,
+      "source": "./source/assets/images/icons/weight.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "copyright": "",
+    "css3": false,
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "cargo-icons",
+    "force": false,
+    "input": {
+      "templates": "./source/assets/images/icons",
+      "vectors": "./source/assets/images/icons"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "./source/assets/stylesheets/partials/config",
+      "fonts": "./source/assets/fonts",
+      "preview": "./source/assets/fonts"
+    },
+    "preprocessor_path": "./../fonts/",
+    "quiet": false,
+    "templates": [
+      "scss"
+    ]
+  },
+  "templates": [
+    "./source/assets/stylesheets/partials/config/_cargo-icons.scss"
+  ]
+}

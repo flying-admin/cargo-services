@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="180px" height="135px" viewBox="0 0 180 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="visual_ent" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03servicios_01" transform="translate(-900.000000, -665.000000)">
+            <g id="Group-5" transform="translate(900.000000, 665.000000)">
+                <rect id="Rectangle-Copy-3" fill="#012140" x="0" y="0" width="180" height="135"></rect>
+                <text id="aduanas" font-family="Lato-Black, Lato" font-size="15" font-weight="700" letter-spacing="2" fill="#FFFFFF">
+                    <tspan x="46" y="93">ADUANAS</tspan>
+                </text>
+                <path d="M108,64 L107.229645,64 L101.940705,64 L99.504959,64 L96.651524,64 L94.2157782,64 L91.3625034,64 L88.9267575,64 L86.0734026,64 L83.6376568,64 L80.7843019,64 L78.348556,64 L75.4952012,64 L73.0594553,64 L67.7704347,64 L67,64 L67,67.8049448 L69.3584702,67.8049448 C69.3263587,67.9639546 69.3086614,68.1274805 69.3086614,68.2947212 C69.3086614,69.7864122 70.6428482,71 72.2827745,71 C73.9227009,71 75.2568877,69.7863394 75.2568877,68.2947212 C75.2568877,68.1274076 75.2392705,67.9639546 75.2070789,67.8049448 L76.1186919,67.8049448 C76.0865804,67.9639546 76.0688831,68.1274805 76.0688831,68.2947212 C76.0688831,69.7864122 77.4030699,71 79.0429963,71 C80.6829226,71 82.0171094,69.7863394 82.0171094,68.2947212 C82.0171094,68.1274076 81.9994922,67.9639546 81.9673007,67.8049448 L93.0319786,67.8049448 C92.9997871,67.9639546 92.9821699,68.1274805 92.9821699,68.2947212 C92.9821699,69.7864122 94.3164368,71 95.9563631,71 C97.5962894,71 98.9304763,69.7863394 98.9304763,68.2947212 C98.9304763,68.1274076 98.912859,67.9639546 98.8806675,67.8049448 L99.7923605,67.8049448 C99.7602491,67.9639546 99.7425517,68.1274805 99.7425517,68.2947212 C99.7425517,69.7864122 101.076819,71 102.716665,71 C104.356671,71 105.690858,69.7863394 105.690858,68.2947212 C105.690858,68.1274076 105.673241,67.9639546 105.641049,67.8049448 L107.999439,67.8049448 L107.999439,64 L108,64 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <rect id="Rectangle-path-Copy-5" fill="#FFFFFF" fill-rule="nonzero" x="70" y="42" width="2" height="19"></rect>
+                <rect id="Rectangle-path-Copy-4" fill="#FFFFFF" fill-rule="nonzero" x="96" y="42" width="2" height="19"></rect>
+                <rect id="Rectangle-path-Copy-2" fill="#FFFFFF" fill-rule="nonzero" x="83" y="42" width="2" height="19"></rect>
+                <rect id="Rectangle-path-Copy" fill="#FFFFFF" fill-rule="nonzero" x="77" y="42" width="2" height="19"></rect>
+                <rect id="Rectangle-path-Copy-7" fill="#FFFFFF" fill-rule="nonzero" x="103" y="42" width="2" height="19"></rect>
+                <rect id="Rectangle-path-Copy-3" fill="#FFFFFF" fill-rule="nonzero" x="90" y="42" width="2" height="19"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

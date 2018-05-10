@@ -2,6 +2,23 @@
   extra_classes ||= ''
 %>
 <footer class="footer <%= extra_classes %>">
+  <!-- <div class="content__wrapper"> -->
+    <div class="container">
+    <div class="footer__content">
+      <p>© Grupo Cargo Services</p>
 
-<h1>Footer</h1>
+      <ul class="footer__content__nav">
+        <li>
+          <%= link_to 'Política de Privacidad', '/privacy-policy.html', :relative => true %>
+        </li>
+        <li>
+          <%= link_to 'Aviso legal', '/legal-warning.html', :relative => true %>
+        </li>
+        <li>
+          <%= link_to 'Política de Calidad', '/privacy-quality.html', :relative => true %>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 </footer>

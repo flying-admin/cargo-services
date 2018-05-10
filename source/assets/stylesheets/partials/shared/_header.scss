@@ -1,0 +1,119 @@
+.header {
+  width: 100%;
+  max-width: 1440px;
+
+  display: flex;
+
+  &__logo {
+    width: 234px;
+    height: 100px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    @include media("<desktop") {
+      width: 170px;
+    }
+    &__logo {
+      width: 100%;
+    }
+  }
+
+  &__navs {
+    width: calc(100% - 234px - 235px);
+    @include media("<desktop") {
+      width: calc(100% - 170px - 170px);
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      background-color: $secondary;
+      color: $white;
+      height: 39px;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+      ul {
+        display: flex;
+        li {
+          a {
+            line-height: 39px;
+            height: 39px;
+            display: block;
+          }
+        }
+      }
+      &__left {
+        padding-left: 18px;
+        @include media("<desktop") {
+          padding-left: 0;
+        }
+        li {
+          padding-left: 23px;
+          .icon-location {
+            font-size: 19px;
+          }
+          .icon-phone {
+            font-size: 15px;
+          }
+          .icon-mail {
+            display: inline-block;
+            position: relative;
+            top: 4px;
+            font-size: 19px;
+          }
+          .text {
+            font-size: 12px;
+            display: inline-block;
+            padding-left: 11px;
+          }
+        }
+      }
+      &__right {
+        padding-right: 24px;
+        @include media("<desktop") {
+          padding-right: 0;
+        }
+        li {
+          padding-right: 15px;
+          a {
+            font-size: 12px;
+            font-weight: 900;
+            &.active {
+              font-weight: normal;
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+    &__menu {
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          a {
+            display: inline-block;
+            padding: 0 20px;
+            line-height: 61px;
+            height: 61px;
+
+            font-size: 12px;
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-budget {
+    width: 235px;
+    display: block;
+    @include media("<desktop") {
+      width: 170px;
+    }
+  }
+}

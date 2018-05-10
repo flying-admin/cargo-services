@@ -1,0 +1,17 @@
+<%
+  extra_classes ||= ""
+  extra_attributes ||= ""
+  type ||= "link"
+  text ||= ""
+  link ||= "#"
+%>
+
+<% if type === "link" %>
+  <a href="<%= link %>" class="btn <%= extra_classes %>" <%= extra_attributes %>>
+    <%= text %>
+  </a>
+<% else %>
+  <button type="<%= type %>" class="btn <%= extra_classes %>" <%= extra_attributes %>>
+    <%= text %>
+  </button>
+<% end %>

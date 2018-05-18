@@ -17,4 +17,16 @@ $(document).ready(function(){
       sliderHero.slideTo(slide);
     });
   }
+
+  if ( $('.slider-home').length > 0 ) {
+    var sliderHome = new Swiper('.slider-home .swiper-container', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+
+  }
 });

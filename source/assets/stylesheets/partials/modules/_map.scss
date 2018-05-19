@@ -1,0 +1,49 @@
+.map {
+  &__map {
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    padding: 100px 60px 20px 60px;
+    @include media("<desktop") {
+      padding: 100px 20px 20px 20px;
+    }
+    &__item {
+      margin-bottom: 80px;
+      padding: 0 30px;
+      &__title {
+        font-family: $font_title;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $secondary;
+        margin-bottom: 30px;
+      }
+      &__list {
+        li {
+          position: relative;
+          padding-left: 30px;
+          font-size: 16px;
+          line-height: 22px;
+          color: $darkgrey;
+          margin-bottom: 16px;
+          a {
+            color: $secondary;
+            text-decoration: none;
+          }
+          .icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: $secondary;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -36,8 +36,28 @@ img {
 }
 
 .link {
-  color: $secondary;
+  display: inline-block;
+  color: $corporative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
   text-decoration: none;
+  &:after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: $corporative;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: all 0.5s;
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
 }
 
 /* ========== HELPERS ========== */

@@ -32,6 +32,8 @@
     background-color: $primary;
     border-color: $primary;
     color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     &:hover {
       background-color: rgba($primary, 0.8);
       border-color: rgba($primary, 0.8);

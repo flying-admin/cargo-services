@@ -1,0 +1,92 @@
+<%
+  extra_classes ||= ""
+  title ||= ""
+  text ||= ""
+  images ||= ""
+%>
+
+
+<div class="request-estimation" id="budget-form">
+
+  <div class="request-estimation__wrap" style="background-image: url(../assets/images/content/home/services.jpg)">
+    <div class="request-estimation__wrap__text">
+      <p class="small">
+        Servicios
+      </p>
+      <p class="title">
+        Lorem ipsum dolor sit amet
+      </p>
+      <div class="text">
+        <p>
+          Cargo Services ofrece un servicio de logística integral para el transporte de todo tipo de mercancías desde y hasta cualquier punto del mundo.
+        </p>
+      </div>
+      <%= link_to 'Ver todos sus servicios', '', :relative => true, class: 'link' %>
+    </div>
+  </div>
+    <div class="request-estimation__wrap__form">
+      <p class="small">
+        Solicita
+      </p>
+      <p class="title">
+        Presupuesto gratuito
+      </p>
+      <form>
+        <%= partial("modules/input", :locals => {
+          :extra_classes => '',
+          :extra_attributes => '',
+          :label => '<span class="icon icon-location"></span>',
+          :placeholder => 'Origen',
+          :value => '',
+          :name => 'estimation-origin',
+          :type => 'text',
+
+        }) %>
+
+        <%= partial("modules/input", :locals => {
+          :extra_classes => '',
+          :extra_attributes => '',
+          :label => '<span class="icon icon-location"></span>',
+          :placeholder => 'Destino',
+          :value => '',
+          :name => 'estimation-destination',
+          :type => 'text',
+
+        }) %>
+
+        <%= partial("modules/input", :locals => {
+          :extra_classes => '',
+          :extra_attributes => '',
+          :label => '<span class="icon icon-weight"></span>',
+          :placeholder => '¿Cuánto pesa tu envío?',
+          :value => '',
+          :name => 'estimation-weight',
+          :type => 'text',
+
+        }) %>
+
+        <%= partial("modules/input", :locals => {
+          :extra_classes => '',
+          :extra_attributes => '',
+          :label => '<span class="icon icon-mail"></span>',
+          :placeholder => 'Mail',
+          :value => '',
+          :name => 'estimation-mail',
+          :type => 'mail',
+
+        }) %>
+
+        <%= partial("modules/button", :locals => {
+          :extra_classes => 'btn--primary btn--block',
+          :extra_attributes => '',
+          :type => 'button',
+          :text => 'Pídenos presupuesto',
+          :link => '',
+
+        }) %>
+
+      </form>
+    </div>
+
+</div>
+

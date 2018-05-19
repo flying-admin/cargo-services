@@ -1,0 +1,16 @@
+<%
+  extra_classes ||= ""
+  extra_attributes ||= ""
+  label ||= ""
+  placeholder ||= ""
+  value ||= ""
+  name ||= ""
+  type ||= "text"
+%>
+
+<div class="input <%= extra_classes %>">
+  <% if label != '' %>
+    <label for="<%= name %>" class="input__label"><%= label %></label>
+  <% end %>
+  <input type="<%= type %>" id="<%= name %>" name="<%= name %>" placeholder="<%= placeholder %>" value="<%= value %>" class="input__field" <%= extra_attributes %> >
+</div>

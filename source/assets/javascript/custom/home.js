@@ -33,7 +33,12 @@ $(document).ready(function(){
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
-      }
+      },
+      breakpoints: {
+        767: {
+          slidesPerView: 1.3
+        }
+      },
     });
 
   }

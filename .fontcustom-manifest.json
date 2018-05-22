@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "3ca435af6893efe4a2794eab61efcf6442340e62765a4b2c5b750a6c7595f4f0",
-    "current": "3ca435af6893efe4a2794eab61efcf6442340e62765a4b2c5b750a6c7595f4f0"
+    "previous": "6990c1972c0cc0a19392de5a7678ed3879e9a9ce602795dfdcbb415e8d11128b",
+    "current": "6990c1972c0cc0a19392de5a7678ed3879e9a9ce602795dfdcbb415e8d11128b"
   },
   "fonts": [
     "./source/assets/fonts/cargo-icons.ttf",
@@ -11,6 +11,10 @@
     "./source/assets/fonts/cargo-icons.woff2"
   ],
   "glyphs": {
+    "angle-down": {
+      "codepoint": 61727,
+      "source": "./source/assets/images/icons/angle-down.svg"
+    },
     "angle-left": {
       "codepoint": 61696,
       "source": "./source/assets/images/icons/angle-left.svg"
@@ -18,6 +22,10 @@
     "angle-right": {
       "codepoint": 61697,
       "source": "./source/assets/images/icons/angle-right.svg"
+    },
+    "angle-up": {
+      "codepoint": 61728,
+      "source": "./source/assets/images/icons/angle-up.svg"
     },
     "arrow-down": {
       "codepoint": 61698,
@@ -34,6 +42,10 @@
     "check": {
       "codepoint": 61701,
       "source": "./source/assets/images/icons/check.svg"
+    },
+    "close": {
+      "codepoint": 61726,
+      "source": "./source/assets/images/icons/close.svg"
     },
     "cross-trade": {
       "codepoint": 61702,

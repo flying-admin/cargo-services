@@ -258,6 +258,8 @@
     background-color: $secondary;
     z-index: 999;
     padding-top: 83px;
+    max-height: 100vh;
+    overflow-y: scroll;
     ul {
       li {
         a {

@@ -1,0 +1,26 @@
+---
+title: Services
+layout: layout
+---
+<%= partial("shared/header", :locals => {
+  :extra_classes => '',
+  :active => 'services'
+}) %>
+
+<div class="content__wrapper">
+
+  <%= partial("modules/hero", :locals => {
+    :extra_classes => '',
+    :title => 'A donde quieras desde donde quieras',
+    :text => 'Desde 1988',
+    :image => 'services/hero.jpg'
+  }) %>
+
+
+
+  <%= partial("modules/map", :locals => {
+    :extra_classes => ''
+  }) %>
+
+</div>
+<%= partial("shared/footer") %>

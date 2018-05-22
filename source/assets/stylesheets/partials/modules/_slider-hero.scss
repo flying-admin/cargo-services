@@ -1,4 +1,5 @@
 .slider-hero {
+  position: relative;
   width: 100%;
   // max-width: 1440px;
   margin: 0 auto;
@@ -152,6 +153,35 @@
       }
     }
   }
+  .btn-down {
+    border: 0;
+    background-color: rgba($white, 0.9);
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    padding: 35px 40px;
+    font-size: 32px;
+    color: $corporative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -56px;
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+    @include media("<phablet") {
+      display: none;
+    }
+    .icon {
+      width: 22px;
+      height: 32px;
+      display: block;
+      &:before {
+        width: 22px;
+        height: 32px;
+      }
+    }
+  }
   .swiper-container {
     .swiper-wrapper {
       .swiper-slide {
@@ -170,6 +200,19 @@
           left: 0;
           right: 0;
           background-color: rgba($black, 0.3);
+        }
+      }
+    }
+    .swiper-pagination {
+      @include media("<phablet") {
+        bottom: 17px;
+        .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          background-color: $white;
+          &.swiper-pagination-bullet-active {
+
+          }
         }
       }
     }

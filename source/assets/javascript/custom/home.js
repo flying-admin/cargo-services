@@ -2,6 +2,14 @@ $(document).ready(function(){
   if ( $('.slider-hero').length > 0 ) {
     var sliderHero = new Swiper('.slider-hero .swiper-container', {
       spaceBetween: 100,
+      breakpoints: {
+        767: {
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+          },
+        }
+      },
       on: {
         slideChange : function() {
           var activeItem = sliderHero.activeIndex;

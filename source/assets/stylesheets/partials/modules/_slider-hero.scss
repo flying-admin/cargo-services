@@ -1,4 +1,5 @@
 .slider-hero {
+  position: relative;
   width: 100%;
   // max-width: 1440px;
   margin: 0 auto;
@@ -10,6 +11,11 @@
     left: 0;
     right: 0;
     text-align: center;
+    @include media("<phablet") {
+      bottom: auto;
+      top: 28px;
+      padding: 0 15px;
+    }
     .small {
       font-size: 30px;
       line-height: 80px;
@@ -17,6 +23,10 @@
       color: $white;
       text-transform: uppercase;
       margin-bottom: 12px;
+      @include media("<phablet") {
+        font-size: 25px;
+        line-height: 40px;
+      }
     }
     .title {
       font-family: $font_title;
@@ -24,6 +34,10 @@
       line-height: 80px;
       color: $white;
       text-transform: uppercase;
+      @include media("<phablet") {
+        font-size: 40px;
+        line-height: 55px;
+      }
     }
   }
   &__navigation {
@@ -38,6 +52,9 @@
     margin: auto;
     z-index: 1;
     padding: 0 40px;
+    @include media("<phablet") {
+      bottom: 57px;
+    }
     &__item {
       width: calc((100% - 176px) / 3);
       border-bottom: 4px solid rgba($white, 0.3);
@@ -50,6 +67,11 @@
       }
       @include media("<tablet") {
         width: calc((100% - 60px) / 3);
+      }
+      @include media("<phablet") {
+        display: none;
+        width: 100%;
+        margin: 0 auto;
       }
       .text {
         display: flex;
@@ -87,6 +109,10 @@
             font-size: 50px;
             height: 33px;
           }
+          @include media("<phablet") {
+            font-size: 87px;
+            height: 55px;
+          }
           &:before {
             height: inherit;
           }
@@ -96,6 +122,9 @@
           @include media("<tablet") {
             font-size: 50px;
           }
+          @include media("<phablet") {
+            font-size: 78px;
+          }
         }
         .icon-plane {
           font-size: 86px;
@@ -104,6 +133,10 @@
             font-size: 50px;
             height: 40px;
           }
+          @include media("<phablet") {
+            font-size: 86px;
+            height: 60px;
+          }
           &:before {
             height: inherit;
           }
@@ -111,9 +144,41 @@
       }
       &.active {
         border-bottom-color: $white;
+        @include media("<phablet") {
+          display: flex;
+        }
         .wrap-icon {
           color: $white;
         }
+      }
+    }
+  }
+  .btn-down {
+    border: 0;
+    background-color: rgba($white, 0.9);
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    padding: 35px 40px;
+    font-size: 32px;
+    color: $corporative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -56px;
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+    @include media("<phablet") {
+      display: none;
+    }
+    .icon {
+      width: 22px;
+      height: 32px;
+      display: block;
+      &:before {
+        width: 22px;
+        height: 32px;
       }
     }
   }
@@ -124,6 +189,9 @@
         width: 100%;
         height: calc(100vh - 100px);
         position: relative;
+        @include media("<phablet") {
+          height: calc(100vh - 71px);
+        }
         &:before {
           content: '';
           position: absolute;
@@ -132,6 +200,19 @@
           left: 0;
           right: 0;
           background-color: rgba($black, 0.3);
+        }
+      }
+    }
+    .swiper-pagination {
+      @include media("<phablet") {
+        bottom: 17px;
+        .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          background-color: $white;
+          &.swiper-pagination-bullet-active {
+
+          }
         }
       }
     }

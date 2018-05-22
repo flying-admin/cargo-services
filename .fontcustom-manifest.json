@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "6990c1972c0cc0a19392de5a7678ed3879e9a9ce602795dfdcbb415e8d11128b",
-    "current": "6990c1972c0cc0a19392de5a7678ed3879e9a9ce602795dfdcbb415e8d11128b"
+    "previous": "a385f3a193a9c7fd0d78d02dc13dc2e6af6061aa5bb07e3acdd6afe262c4e259",
+    "current": "a385f3a193a9c7fd0d78d02dc13dc2e6af6061aa5bb07e3acdd6afe262c4e259"
   },
   "fonts": [
     "./source/assets/fonts/cargo-icons.ttf",

@@ -1,0 +1,83 @@
+.services-list {
+  position: relative;
+  top: -135px;
+  display: flex;
+  @include media("<phablet") {
+    top: auto;
+  }
+  @include media("<tablet") {
+    flex-wrap: wrap;
+  }
+  &__item {
+    background-color: $secondary;
+    width: calc(100% / 8);
+    @include media("<tablet") {
+      width: 135px;
+      width: calc(100% / 4);
+    }
+    @include media("<phablet") {
+      width: 135px;
+      width: calc(100% / 2);
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+      text-align: center;
+
+      height: 135px;
+      padding: 30px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .icon {
+      font-size: 40px;
+      height: 45px;
+      line-height: 45px;
+      display: block;
+      &:before {
+        vertical-align: text-bottom;
+        line-height: 45px;
+      }
+      &.icon-delivery-truck {
+        font-size: 58px;
+        &:before {
+          height: 36px;
+        }
+      }
+      &.icon-plane {
+        font-size: 50px;
+        &:before {
+          height: 36px;
+        }
+      }
+      &.icon-cross-trade {
+        font-size: 45px;
+      }
+      &.icon-qr-code {
+        font-size: 31px;
+      }
+      &.icon-customs {
+        font-size: 41px;
+        &:before {
+          height: 31px;
+        }
+      }
+      &.icon-warehouses {
+        font-size: 37px;
+      }
+      &.icon-lock {
+        font-size: 33px;
+      }
+    }
+    .text {
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 18px;
+      letter-spacing: 2px;
+      margin-top: auto;
+    }
+  }
+}

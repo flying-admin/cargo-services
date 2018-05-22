@@ -16,6 +16,10 @@ layout: layout
     :image => 'services/hero.jpg'
   }) %>
 
+  <%= partial("modules/services-list", :locals => {
+    :extra_classes => ''
+  }) %>
+
 
 
   <%= partial("modules/map", :locals => {

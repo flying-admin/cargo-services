@@ -8,7 +8,9 @@
 
 <div class="hero" style="background-image: url(../assets/images/content/<%= image %>);">
   <div class="hero__content">
-    <p class="hero__content__text"><%= text %></p>
+    <% if text != '' %>
+      <p class="hero__content__text"><%= text %></p>
+    <% end %>
     <p class="hero__content__title"><%= title %></p>
   </div>
 </div>

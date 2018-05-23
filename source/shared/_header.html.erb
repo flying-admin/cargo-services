@@ -1,5 +1,6 @@
 <%
   extra_classes ||= ''
+  active ||= ''
 %>
 <header class="header <%= extra_classes %>">
 
@@ -9,7 +10,7 @@
       <li>
         <button class="btn-close"><span class="icon icon-close"></span></button>
       </li>
-      <li>
+      <li class="<%= active == 'services' ? 'active' : '' %>">
         <%#= link_to 'Servicios', '/services.html', :relative => true %>
         <div class="dropdown">
           <button type="button" class="btn-dropdown">
@@ -46,18 +47,18 @@
           </div>
         </div>
       </li>
-      <li>
+      <li class="<%= active == 'company' ? 'active' : '' %>">
         <%= link_to 'Empresa', '/company.html', :relative => true %>
       </li>
-      <li>
+      <li class="<%= active == 'news' ? 'active' : '' %>">
         <%= link_to 'Noticias', '/news.html', :relative => true %>
       </li>
-      <li>
+      <li class="<%= active == 'contact' ? 'active' : '' %>">
         <%= link_to 'Contacto', '/contact.html', :relative => true %>
       </li>
-      <li>
+      <!-- <li>
         <%= link_to 'Localiza tu oficina', '/contact.html', :relative => true %>
-      </li>
+      </li> -->
       <li>
         <a href="#budget-form" class="btn btn--primary">Pídenos presupuesto</a>
       </li>
@@ -105,16 +106,16 @@
 
     <div class="header__navs__menu">
       <ul>
-        <li>
+        <li class="<%= active == 'services' ? 'active' : '' %>">
           <%= link_to 'Servicios', '/services.html', :relative => true %>
         </li>
-        <li>
+        <li class="<%= active == 'company' ? 'active' : '' %>">
           <%= link_to 'Empresa', '/company.html', :relative => true %>
         </li>
-        <li>
+        <li class="<%= active == 'news' ? 'active' : '' %>">
           <%= link_to 'Noticias', '/news.html', :relative => true %>
         </li>
-        <li>
+        <li class="<%= active == 'contact' ? 'active' : '' %>">
           <%= link_to 'Contacto', '/contact.html', :relative => true %>
         </li>
       </ul>

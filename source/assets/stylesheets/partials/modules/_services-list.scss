@@ -1,6 +1,7 @@
 .services-list {
   position: relative;
   margin-top: -135px;
+  margin-bottom: 57px;
   display: flex;
   @include media("<phablet") {
     top: auto;

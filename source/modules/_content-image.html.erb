@@ -1,0 +1,19 @@
+<%
+  extra_classes ||= ""
+  title ||= ""
+  content ||= ""
+  image ||= ""
+  contentPosition ||= 'left'
+%>
+
+
+<div class="content-image <%= extra_classes %>  content-image--<%= contentPosition %>">
+  <div class="content-image__text">
+    <p class="content-image__text__title"><%= title %></p>
+    <div class="content-image__text__content"><%= content %></div>
+  </div>
+  <div class="content-image__image">
+    <%= image_tag('../assets/images/content/' + image, :class => 'content-image__image__image') %>
+  </div>
+</div>
+

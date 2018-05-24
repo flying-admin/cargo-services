@@ -3,11 +3,7 @@
   margin-top: -135px;
   margin-bottom: 57px;
   display: flex;
-  @include media("<tablet") {
-    flex-wrap: wrap;
-  }
   @include media("<phablet") {
-    // top: auto;
     display: none;
   }
   &__item {
@@ -80,6 +76,9 @@
       line-height: 18px;
       letter-spacing: 2px;
       margin-top: auto;
+      @include media("<tablet") {
+        font-size: 10px;
+      }
     }
   }
 }

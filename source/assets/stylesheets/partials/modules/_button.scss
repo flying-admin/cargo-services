@@ -49,9 +49,17 @@
   }
 
   &--secondary {
-    // background-color: transparent;
-    // border-color: rgba($blackish, 0.2);
-    // color: $blackish;
+    background-color: $bg;
+    border: 1px solid $buttongrey;
+    color: $primary;
+
+    font-family: $font_default;
+    font-weight: 900;
+    line-height: 26px;
+    padding: 11px 15px;
+    &:before {
+      margin-right: 5px;
+    }
     &:hover {
       // background-color: transparent;
       // border-color: rgba($blackish, 0.3);

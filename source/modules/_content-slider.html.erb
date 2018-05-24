@@ -1,0 +1,31 @@
+<%
+  extra_classes ||= ""
+  title ||= ""
+  content ||= ""
+  images ||= ""
+  contentPosition ||= 'left'
+%>
+
+
+<div class="content-slider <%= extra_classes %>  content-slider--<%= contentPosition %>">
+  <div class="content-slider__text">
+    <p class="content-slider__text__title"><%= title %></p>
+    <div class="content-slider__text__content"><%= content %></div>
+  </div>
+  <div class="content-slider__slider">
+    <div class="swiper-container">
+      
+      <div class="swiper-wrapper">
+        <% images.each do |image| %>
+          <div class="swiper-slide" style="background-image: url(../assets/images/content/<%= image %>);"></div>
+        <% end %>
+      </div>
+    </div>
+    
+    <div class="content-slider__slider__navigation">
+      <div class="swiper-button-prev"><span class="icon icon-arrow-left"></span></div>
+      <div class="swiper-button-next"><span class="icon icon-arrow-right"></span></div>
+    </div>
+  </div>
+</div>
+

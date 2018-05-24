@@ -1,0 +1,19 @@
+.company-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  @include media("<phablet") {
+    display: none;
+  }
+  &__item {
+    padding: 35px 25px;
+    a {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 900;
+      color: $primary;
+      line-height: 18px;
+      text-decoration: none;
+    }
+  }
+}

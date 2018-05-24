@@ -24,6 +24,11 @@ $(document).ready(function(){
       var slide = parseInt($(this).data('slide'));
       sliderHero.slideTo(slide);
     });
+
+
+    $('.slider-hero .btn-down').on('click', function() {
+
+    });
   }
 
   if ( $('.slider-home').length > 0 ) {

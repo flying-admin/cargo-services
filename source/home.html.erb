@@ -13,22 +13,24 @@ layout: layout
     :extra_classes => ''
   }) %>
 
-  <%= partial("modules/slider-home", :locals => {
-    :extra_classes => ''
-  }) %>
+  <div id="home">
+    <%= partial("modules/slider-home", :locals => {
+      :extra_classes => ''
+    }) %>
 
-  <%= partial("modules/request-estimation", :locals => {
-    :extra_classes => ''
-  }) %>
+    <%= partial("modules/request-estimation", :locals => {
+      :extra_classes => ''
+    }) %>
 
 
-  <%= partial("modules/home-list", :locals => {
-    :extra_classes => ''
-  }) %>
+    <%= partial("modules/home-list", :locals => {
+      :extra_classes => ''
+    }) %>
 
-  <%= partial("modules/map", :locals => {
-    :extra_classes => ''
-  }) %>
-
+    <%= partial("modules/map", :locals => {
+      :extra_classes => ''
+    }) %>
+  </div>
+  
 </div>
 <%= partial("shared/footer") %>

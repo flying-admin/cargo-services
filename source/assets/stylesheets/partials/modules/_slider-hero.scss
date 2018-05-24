@@ -186,6 +186,7 @@
     .swiper-wrapper {
       .swiper-slide {
         background-size: cover;
+        background-position: center;
         width: 100%;
         height: calc(100vh - 100px - 50px);
         position: relative;

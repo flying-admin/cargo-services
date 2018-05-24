@@ -1,0 +1,18 @@
+---
+title: News
+layout: layout
+---
+<%= partial("shared/header", :locals => {
+  :extra_classes => '',
+  :active => 'news'
+}) %>
+
+<div class="content__wrapper">
+
+  <%= partial("modules/news-slider", :locals => {
+    :extra_classes => ''
+  }) %>
+  
+
+</div>
+<%= partial("shared/footer") %>

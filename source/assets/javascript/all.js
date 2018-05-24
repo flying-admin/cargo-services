@@ -24,6 +24,23 @@ $(window).on("load", function(){
   $('.dropdown .btn-dropdown').on('click', function(ev) {
     $(this).closest('.dropdown').toggleClass('open');
   });
+
+  $('[data-scroll]').on('click', function(ev) {
+
+      ev.preventDefault();
+      var headerOffset = $('header.header').height();
+      var target = $($(this).data('scroll'));
+      var offsetTop = parseInt($($(this).data('offsettop'))[0]) > 0 ? parseInt($($(this).data('offsettop'))[0]) : 0;
+      console.log(offsetTop);
+      var distance = target.offset().top - headerOffset - offsetTop;
+
+      $('html, body').animate({
+          scrollTop: distance + 1
+      }, 1000, function(){
+        
+      });
+
+  });
 });
 
 $(window).on("resize", function(){

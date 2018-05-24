@@ -30,7 +30,9 @@ $(window).on("load", function(){
       ev.preventDefault();
       var headerOffset = $('header.header').height();
       var target = $($(this).data('scroll'));
-      var distance = target.offset().top - headerOffset;
+      var offsetTop = parseInt($($(this).data('offsettop'))[0]) > 0 ? parseInt($($(this).data('offsettop'))[0]) : 0;
+      console.log(offsetTop);
+      var distance = target.offset().top - headerOffset - offsetTop;
 
       $('html, body').animate({
           scrollTop: distance + 1

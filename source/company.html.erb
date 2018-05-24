@@ -92,6 +92,42 @@ layout: layout
     :contentPosition => 'left'
   }) %>
 
+  <%= partial("modules/content-centered", :locals => {
+    :extra_classes => 'content-centered--company',
+    :title => 'Calidad',
+    :content => '<div class="content-block">' +
+                  '<p>Comprometida con la calidad, y teniendo el firme propósito de obtener la excelencia en sus servicios y la satisfacción plena de sus clientes, Cargo Services obtuvo la Certificación ISO 9001 desde el año 1997.</p>' +
+                '</div>' +
+                '<div class="content-block">' +
+                  '<div class="company-logos">' +
+                    image_tag('content/company/logo-ateia.png', :class => 'company-logo') +
+                    image_tag('content/company/logo-feteia.png', :class => 'company-logo') +
+                    image_tag('content/company/logo-aeo.png', :class => 'company-logo') +
+                    image_tag('content/company/logo-iata.png', :class => 'company-logo') +
+                    image_tag('content/company/logo-iso.png', :class => 'company-logo') +
+                  '</div>' +
+                '</div>' +
+                '<div class="content-block">' +
+                  '<div class="company-buttons">' +
+                    partial("modules/button", :locals => {
+                      :extra_classes => 'btn--secondary icon icon-download',
+                      :extra_attributes => '',
+                      :type => 'button',
+                      :text => 'Descarga el certificado',
+                      :link => ''
+                    }) +
+                    partial("modules/button", :locals => {
+                      :extra_classes => 'btn--secondary icon icon-download',
+                      :extra_attributes => '',
+                      :type => 'button',
+                      :text => 'Descarga la Política de Calidad',
+                      :link => ''
+                    }) +
+
+                  '</div>' +
+                '</div>' 
+  }) %>
+
 
 
   <%= partial("modules/map", :locals => {

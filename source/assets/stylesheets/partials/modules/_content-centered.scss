@@ -89,12 +89,63 @@
       .content-block {
         margin-bottom: 15px;
       }
+      .company-logos {
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include media("<tablet") {
+          flex-wrap: wrap;
+        }
+        .company-logo {
+          width: auto;
+          margin-right: 60px;
+          &:first-child,
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .company-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 660px;
+        margin: 0 auto;
+        @include media("<tablet") {
+          flex-wrap: wrap;
+        }
+        @include media("<phablet") {
+          width: 100%;
+        }
+        .btn {
+          width: 310px;
+          @include media("<phablet") {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
       .lock-bullet {
         width: 18px;
         display: inline-block;
         margin-right: 15px;
         position: relative;
         top: 5px;
+      }
+    }
+  }
+  &--company {
+    margin-bottom: 100px;
+    .content-centered__text__content {
+      width: 100%;
+      p {
+        width: 50%;
+        margin: 0 auto;
+        @include media("<phablet") {
+          width: 100%;
+        }
       }
     }
   }

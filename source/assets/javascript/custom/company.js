@@ -20,4 +20,22 @@ $(document).ready(function(){
 
   }
 
+  if ( $('.company-menu').length > 0 ) {
+    $(window).on("scroll", function() {
+      var scrollY = $(this).scrollTop();
+
+
+      var submenu = $('.company-menu');
+      if (submenu.length) {
+        var submenuOffset = (submenu.offset().top - 100);
+        if (scrollY > submenuOffset && !submenu.hasClass('company-menu--sticky')) {
+          submenu.addClass('company-menu--sticky');
+        }
+        else if(scrollY <= submenuOffset && submenu.hasClass('company-menu--sticky')) {
+          submenu.removeClass('company-menu--sticky');
+        }
+      }
+    });
+  }
+
 });

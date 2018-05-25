@@ -1,9 +1,13 @@
 .company-menu {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  height: 88px;
   margin-bottom: 60px;
   @include media("<phablet") {
     display: none;
+  }
+  &__wrapp {
+    display: flex;
+    justify-content: center;
   }
   &__item {
     padding: 35px 25px;
@@ -17,6 +21,15 @@
       color: $primary;
       line-height: 18px;
       text-decoration: none;
+    }
+  }
+  &--sticky {
+    .company-menu__wrapp {
+      position: fixed;
+      top: 100px;
+      width: 100%;
+      left: 0;
+      background-color: $white;
     }
   }
 }

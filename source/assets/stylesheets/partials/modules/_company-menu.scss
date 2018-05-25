@@ -7,6 +7,9 @@
   }
   &__item {
     padding: 35px 25px;
+    @include media("<tablet") {
+      padding: 35px 15px;
+    }
     a {
       display: inline-block;
       font-size: 15px;

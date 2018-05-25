@@ -15,6 +15,9 @@
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 36px;
+      @include media("<tablet") {
+        width: 70%;
+      }
       @include media("<phablet") {
         width: 100%;
         padding: 0 20px;
@@ -24,6 +27,9 @@
       width: 50%;
       margin: 0 auto;
       text-align: center;
+      @include media("<tablet") {
+        width: 70%;
+      }
       @include media("<phablet") {
         width: 100%;
         padding: 0 20px;
@@ -97,12 +103,40 @@
         @include media("<tablet") {
           flex-wrap: wrap;
         }
+        @include media("<phablet") {
+          display: block;
+        }
         .company-logo {
           width: auto;
           margin-right: 60px;
+          @include media("<tablet") {
+            margin-right: 20px;
+          }
+          @include media("<phablet") {
+            display: block;
+            margin: 0 auto 20px auto;
+          }
           &:first-child,
           &:last-child {
             margin-right: 0;
+            @include media("<phablet") {
+              margin: 0 auto 20px auto;
+            }
+          }
+          &.ateia {
+            width: 170px;
+          }
+          &.feteia {
+            width: 199px;
+          }
+          &.aeo {
+            width: 99px;
+          }
+          &.iata {
+            width: 100px;
+          }
+          &.iso {
+            width: 86px;
           }
         }
       }

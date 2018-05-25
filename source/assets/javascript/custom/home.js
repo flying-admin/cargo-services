@@ -61,7 +61,8 @@ $(document).ready(function(){
           slidesPerView: 3
         },
         767: {
-          slidesPerView: 1
+          slidesPerView: 1,
+          autoHeight: true
         }
       },
     });

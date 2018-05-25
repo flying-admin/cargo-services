@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".services-list").length>0&&$(window).on("scroll",function(){var s=$(this).scrollTop(),i=$(".services-list");if(i.length){var e=i.offset().top-100;s>e&&!i.hasClass("services-list--sticky")?i.addClass("services-list--sticky"):s<=e&&i.hasClass("services-list--sticky")&&i.removeClass("services-list--sticky")}})});

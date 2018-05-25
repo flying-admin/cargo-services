@@ -21,7 +21,8 @@ $(window).on("load", function(){
     }
   });
 
-  $('.dropdown .btn-dropdown').on('click', function(ev) {
+  $('.dropdown .btn-dropdown .icon').on('click', function(ev) {
+    ev.preventDefault();
     $(this).closest('.dropdown').toggleClass('open');
   });
 

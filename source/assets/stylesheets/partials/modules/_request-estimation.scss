@@ -1,5 +1,10 @@
 .request-estimation {
   position: relative;
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
   &__wrap {
     position: relative;
     height: 720px;
@@ -8,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    float: left;
     @include media("<tablet") {
       display: block;
       width: 100%;

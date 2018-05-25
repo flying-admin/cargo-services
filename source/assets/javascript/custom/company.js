@@ -36,6 +36,30 @@ $(document).ready(function(){
         }
       }
     });
+
+
+    var $links = $('.company-menu__item');
+
+    var $blocks = [];
+    $links.each(function(){
+      var $this = $(this);
+      var $block = $($this.attr('data-scroll'));
+      $blocks.push($block);
+    });
+
+    $(window).on('scroll', function(){
+      console.log($blocks);
+      console.log($($blocks[0]));
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      for (var i = 0; i < $blocks.length; i++){
+        var offsetBlock = $blocks[i].offset().top;
+        if ( offsetBlock < (scroll + (0.5 * windowHeight)) && offsetBlock - scroll > 0) {
+          $links.removeClass('active');
+          $links.filter('[data-scroll="#'+ $blocks[i].attr('id') +'"]').addClass('active');
+        }
+      }
+    });
   }
 
 });

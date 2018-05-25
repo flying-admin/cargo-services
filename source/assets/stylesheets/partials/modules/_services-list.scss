@@ -83,6 +83,14 @@
         font-size: 10px;
       }
     }
+    &.active {
+      .icon {
+        color: $lightgrey;
+      }
+      .text {
+        color: $lightgrey;
+      }
+    }
   }
   &--sticky {
     .services-list__wrapp {

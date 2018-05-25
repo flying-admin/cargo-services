@@ -2,9 +2,12 @@
   position: relative;
   margin-top: -135px;
   margin-bottom: 57px;
-  display: flex;
+  height: 135px;
   @include media("<phablet") {
     display: none;
+  }
+  &__wrapp {
+    display: flex;
   }
   &__item {
     background-color: $secondary;
@@ -79,6 +82,16 @@
       @include media("<tablet") {
         font-size: 10px;
       }
+    }
+  }
+  &--sticky {
+    .services-list__wrapp {
+      position: fixed;
+      top: 100px;
+      width: 100%;
+      left: 0;
+      background-color: $secondary;
+      z-index: 99;
     }
   }
 }

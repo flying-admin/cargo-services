@@ -83,9 +83,9 @@
     </ul>
   </div>
 
-  <a href="/" class="header__logo">
+  <% link_to '/home.html', :relative => true, :class => 'header__logo' do %>
     <%= image_tag("content/cargo30_aniversario.png", :class => 'header__logo__logo') %>
-  </a>
+  <% end %>
 
   <div class="header__navs">
     <div class="header__navs__info">

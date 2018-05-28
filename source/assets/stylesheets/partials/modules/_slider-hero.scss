@@ -186,11 +186,12 @@
     .swiper-wrapper {
       .swiper-slide {
         background-size: cover;
+        background-position: center;
         width: 100%;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 100px - 50px);
         position: relative;
         @include media("<phablet") {
-          height: calc(100vh - 71px);
+          height: calc(100vh - 71px - 50px);
         }
         &:before {
           content: '';

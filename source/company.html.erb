@@ -10,7 +10,7 @@ layout: layout
 <div class="content__wrapper">
 
   <%= partial("modules/hero", :locals => {
-    :extra_classes => '',
+    :extra_classes => 'hero--company',
     :title => '30 AÑOS CUMPLIENDO CON TUS COMPROMISOS',
     :text => '',
     :image => 'company/hero.jpg'
@@ -34,7 +34,8 @@ layout: layout
                 '</div>',
 
     :image => 'company/company01.jpg',
-    :contentPosition => 'left'
+    :contentPosition => 'left',
+    :id => 'history'
   }) %>
 
   <%= partial("modules/content-image", :locals => {
@@ -53,7 +54,8 @@ layout: layout
                   '<p>Buscar la máxima satisfacción de nuestros clientes, mediante el análisis, estudio y control de sus necesidades, utilizando para ello los mejores medios técnicos y humanos.</p>' +
                 '</div>',
     :image => 'company/company02.jpg',
-    :contentPosition => 'right'
+    :contentPosition => 'right',
+    :id => 'philosophy'
   }) %>
 
   <%= partial("modules/content-centered", :locals => {
@@ -61,7 +63,8 @@ layout: layout
     :title => 'Política de empresa',
     :content => '<div class="content-block">' +
                   '<p>Se basa en la atención personalizada a sus clientes y una política de precio ajustada al mercado junto con unos servicios de toda garantía. Para ello contamos con personal cualificado con formación continua y unos proveedores acreditados, tanto a nivel nacional como internacional</p>' +
-                '</div>'
+                '</div>',
+    :id => 'comany-pol'
   }) %>
 
   <%= partial("modules/company-list", :locals => {
@@ -89,7 +92,8 @@ layout: layout
                 'company/slide-01.jpg',
                 'company/slide-02.jpg'
                 ],
-    :contentPosition => 'left'
+    :contentPosition => 'left',
+    :id => 'corporative'
   }) %>
 
   <%= partial("modules/content-centered", :locals => {
@@ -100,11 +104,11 @@ layout: layout
                 '</div>' +
                 '<div class="content-block">' +
                   '<div class="company-logos">' +
-                    image_tag('content/company/logo-ateia.png', :class => 'company-logo') +
-                    image_tag('content/company/logo-feteia.png', :class => 'company-logo') +
-                    image_tag('content/company/logo-aeo.png', :class => 'company-logo') +
-                    image_tag('content/company/logo-iata.png', :class => 'company-logo') +
-                    image_tag('content/company/logo-iso.png', :class => 'company-logo') +
+                    image_tag('content/company/logo-ateia.png', :class => 'company-logo ateia') +
+                    image_tag('content/company/logo-feteia.png', :class => 'company-logo feteia') +
+                    image_tag('content/company/logo-aeo.png', :class => 'company-logo aeo') +
+                    image_tag('content/company/logo-iata.png', :class => 'company-logo iata') +
+                    image_tag('content/company/logo-iso.png', :class => 'company-logo iso') +
                   '</div>' +
                 '</div>' +
                 '<div class="content-block">' +
@@ -125,7 +129,8 @@ layout: layout
                     }) +
 
                   '</div>' +
-                '</div>' 
+                '</div>' ,
+    :id => 'qa'
   }) %>
 
 

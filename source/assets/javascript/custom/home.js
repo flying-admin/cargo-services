@@ -24,6 +24,11 @@ $(document).ready(function(){
       var slide = parseInt($(this).data('slide'));
       sliderHero.slideTo(slide);
     });
+
+
+    $('.slider-hero .btn-down').on('click', function() {
+
+    });
   }
 
   if ( $('.slider-home').length > 0 ) {
@@ -56,7 +61,8 @@ $(document).ready(function(){
           slidesPerView: 3
         },
         767: {
-          slidesPerView: 1
+          slidesPerView: 1,
+          autoHeight: true
         }
       },
     });

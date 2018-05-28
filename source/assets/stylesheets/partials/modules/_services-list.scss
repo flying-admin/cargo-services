@@ -2,13 +2,12 @@
   position: relative;
   margin-top: -135px;
   margin-bottom: 57px;
-  display: flex;
-  @include media("<tablet") {
-    flex-wrap: wrap;
-  }
+  height: 135px;
   @include media("<phablet") {
-    // top: auto;
     display: none;
+  }
+  &__wrapp {
+    display: flex;
   }
   &__item {
     background-color: $secondary;
@@ -80,6 +79,27 @@
       line-height: 18px;
       letter-spacing: 2px;
       margin-top: auto;
+      @include media("<tablet") {
+        font-size: 10px;
+      }
+    }
+    &.active {
+      .icon {
+        color: $lightgrey;
+      }
+      .text {
+        color: $lightgrey;
+      }
+    }
+  }
+  &--sticky {
+    .services-list__wrapp {
+      position: fixed;
+      top: 100px;
+      width: 100%;
+      left: 0;
+      background-color: $secondary;
+      z-index: 99;
     }
   }
 }

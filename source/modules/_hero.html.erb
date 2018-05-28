@@ -6,7 +6,7 @@
 %>
 
 
-<div class="hero" style="background-image: url(../assets/images/content/<%= image %>);">
+<div class="hero <%= extra_classes %>" style="background-image: url(../assets/images/content/<%= image %>);">
   <div class="hero__content">
     <% if text != '' %>
       <p class="hero__content__text"><%= text %></p>

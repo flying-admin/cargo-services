@@ -54,4 +54,9 @@
     z-index: 0;
     background-color: rgba($black, 0.4);
   }
+  &--company {
+    .hero__content {
+      max-width: 600px;
+    }
+  }
 }

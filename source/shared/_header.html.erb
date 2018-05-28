@@ -11,44 +11,65 @@
         <button class="btn-close"><span class="icon icon-close"></span></button>
       </li>
       <li class="<%= active == 'services' ? 'active' : '' %>">
-        <%#= link_to 'Servicios', '/services.html', :relative => true %>
+        
         <div class="dropdown">
-          <button type="button" class="btn-dropdown">
+          <% link_to '/services.html', :relative => true, :class => 'btn-dropdown' do %>
             Servicios
             <span class="icon icon-angle-down">
-          </button>
+          <% end %>
           <div class="dropdown-list">
             <ul>
               <li>
-                <a href="#">Terrestre</a>
+                <%= link_to 'Terrestre', '/services.html', :relative => true, :fragment => 'ground' %>
               </li>
               <li>
-                <a href="#">Marítimo</a>
+                <%= link_to 'Marítimo', '/services.html', :relative => true, :fragment => 'marine' %>
               </li>
               <li>
-                <a href="#">Aéreo</a>
+                <%= link_to 'Aéreo', '/services.html', :relative => true, :fragment => 'aerial' %>
               </li>
               <li>
-                <a href="#">Cross Trade</a>
+                <%= link_to 'Cross Trade', '/services.html', :relative => true, :fragment => 'cross-trade' %>
               </li>
               <li>
-                <a href="#">Proyctos</a>
+                <%= link_to 'Proyectos', '/services.html', :relative => true, :fragment => 'projects' %>
               </li>
               <li>
-                <a href="#">Aduanas</a>
+                <%= link_to 'Aduanas', '/services.html', :relative => true, :fragment => 'customs' %>
               </li>
               <li>
-                <a href="#">Almacenes</a>
+                <%= link_to 'Almacenes', '/services.html', :relative => true, :fragment => 'warehouses' %>
               </li>
               <li>
-                <a href="#">Seguros</a>
+                <%= link_to 'Seguros', '/services.html', :relative => true, :fragment => 'insurance' %>
               </li>
             </ul>
           </div>
         </div>
       </li>
       <li class="<%= active == 'company' ? 'active' : '' %>">
-        <%= link_to 'Empresa', '/company.html', :relative => true %>
+        <div class="dropdown">
+          <% link_to '/company.html', :relative => true, :class => 'btn-dropdown' do %>
+            Empresa
+            <span class="icon icon-angle-down">
+          <% end %>
+          <div class="dropdown-list">
+            <ul>
+              <li>
+                <%= link_to 'Historia', '/company.html', :relative => true, :fragment => 'history' %>
+              </li>
+              <li>
+                <%= link_to 'Nuestra filosofía', '/company.html', :relative => true, :fragment => 'philosophy' %>
+              </li>
+              <li>
+                <%= link_to 'Política de empresa', '/company.html', :relative => true, :fragment => 'comany-pol' %>
+              </li>
+              <li>
+                <%= link_to 'Calidad', '/company.html', :relative => true, :fragment => 'qa' %>
+              </li>
+            </ul>
+          </div>
+        </div>
       </li>
       <li class="<%= active == 'news' ? 'active' : '' %>">
         <%= link_to 'Noticias', '/news.html', :relative => true %>
@@ -56,18 +77,15 @@
       <li class="<%= active == 'contact' ? 'active' : '' %>">
         <%= link_to 'Contacto', '/contact.html', :relative => true %>
       </li>
-      <!-- <li>
-        <%= link_to 'Localiza tu oficina', '/contact.html', :relative => true %>
-      </li> -->
       <li>
         <a href="#budget-form" class="btn btn--primary">Pídenos presupuesto</a>
       </li>
     </ul>
   </div>
 
-  <a href="/" class="header__logo">
+  <% link_to '/home.html', :relative => true, :class => 'header__logo' do %>
     <%= image_tag("content/cargo30_aniversario.png", :class => 'header__logo__logo') %>
-  </a>
+  <% end %>
 
   <div class="header__navs">
     <div class="header__navs__info">

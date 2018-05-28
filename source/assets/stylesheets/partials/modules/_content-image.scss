@@ -100,6 +100,10 @@
     .content-image__text {
       padding-left: 174px;
       @include media("<tablet") {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      @include media("<phablet") {
         padding-left: 20px;
         padding-right: 20px;
       }
@@ -123,6 +127,10 @@
     .content-image__text {
       padding-right: 174px;
       @include media("<tablet") {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      @include media("<phablet") {
         padding-left: 20px;
         padding-right: 20px;
       }

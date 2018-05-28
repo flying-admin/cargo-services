@@ -1,11 +1,11 @@
 .company-list {
   display: flex;
   justify-content: space-between;
-  padding: 110px 55px;
+  padding: 90px 55px 110px 55px;
   width: calc(100% / 12 * 8);
   margin: 0 auto;
   @include media("<desktop") {
-    padding: 120px 45px 110px 45px;
+    padding: 90px 45px 110px 45px;
   }
   @include media("<tablet") {
     display: block;
@@ -27,6 +27,7 @@
     }
     @include media("<phablet") {
       width: 100%;
+      padding: 0;
     }
     .icon {
       height: 85px;
@@ -53,7 +54,6 @@
       text-transform: uppercase;
       color: $corporative;
       margin-bottom: 15px;
-      margin-top: auto;
     }
     .text {
       font-size: 16px;

@@ -4,10 +4,11 @@
   content ||= ""
   images ||= ""
   contentPosition ||= 'left'
+  id ||= ""
 %>
 
 
-<div class="content-slider <%= extra_classes %>  content-slider--<%= contentPosition %>">
+<div class="content-slider <%= extra_classes %>  content-slider--<%= contentPosition %>" id="<%= id %>">
   <div class="content-slider__text">
     <p class="content-slider__text__title"><%= title %></p>
     <div class="content-slider__text__content"><%= content %></div>

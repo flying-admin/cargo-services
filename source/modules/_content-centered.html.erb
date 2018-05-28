@@ -2,10 +2,11 @@
   extra_classes ||= ""
   title ||= ""
   content ||= ""
+  id ||= ""
 %>
 
 
-<div class="content-centered <%= extra_classes %>">
+<div class="content-centered <%= extra_classes %>" id="<%= id %>">
   <div class="content-centered__text">
     <p class="content-centered__text__title"><%= title %></p>
     <div class="content-centered__text__content"><%= content %></div>

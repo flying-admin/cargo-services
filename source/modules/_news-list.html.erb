@@ -1,0 +1,60 @@
+<%
+  extra_classes ||= ""
+  paginator ||= false
+  items ||= 1
+  theme ||= "blue"
+%>
+
+
+<div class="news-list <%= extra_classes %> news-list--<%= theme %>">
+  <% items.times do |num| %>
+    <%= partial("modules/article-preview", :locals => {
+      :extra_classes => '',
+      :title => 'Cargo Services Group en Linkedin',
+      :date => '22 MAR 2018',
+      :text => '<p>Donec eget neque elit. Ut ornare vehicula nunc sit amet rutrum. Vivamus tincidunt suscipit enim et laoreet. Donec eros odio, porta eu faucibus id, ultricies in lacus.</p>'
+    }) %>
+  <% end %>
+
+  <% if paginator %>
+    <div class="paginator">
+      <ul>
+        <li class="prev disabled">
+          <a href="#">
+            <span class="icon icon-angle-left"></span>
+          </a>
+        </li>
+        <li class="page actual">
+          <span>
+            1
+          </span>
+        </li>
+        <li class="page">
+          <a href="#">
+            2
+          </a>
+        </li>
+        <li class="page">
+          <a href="#">
+            3
+          </a>
+        </li>
+        <li class="page">
+          <span>
+            ...
+          </span>
+        </li>
+        <li class="page">
+          <a href="#">
+            13
+          </a>
+        </li>
+        <li class="next">
+          <a href="#">
+            <span class="icon icon-angle-right"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  <% end %>
+</div>

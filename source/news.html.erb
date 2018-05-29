@@ -12,6 +12,13 @@ layout: layout
   <%= partial("modules/news-slider", :locals => {
     :extra_classes => ''
   }) %>
+
+  <%= partial("modules/news-list", :locals => {
+    :extra_classes => '',
+    :paginator => true,
+    :items => 12,
+    :theme => 'blue'
+  }) %>
   
 
 </div>

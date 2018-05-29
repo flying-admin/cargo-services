@@ -1,0 +1,31 @@
+---
+title: Article
+layout: layout
+---
+<%= partial("shared/header", :locals => {
+  :extra_classes => '',
+  :active => 'news'
+}) %>
+
+<div class="content__wrapper">
+
+  <%= partial("modules/article", :locals => {
+    :extra_classes => '',
+    :title => 'Alianza entre grupo proexi y grupo cargo services',
+    :image => lorem.image('518x328'),
+    :image_text => '“Donec eget neque elit. Ut ornare vehicula nunc sit amet rutrum. Vivamus tincidunt suscipit enim et laoreet. Donec eros odio, porta eu faucibus id, ultricies in lacus.”',
+    :date => '22 MAR 2018',
+    :text => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id tellus sit amet ante dictum iaculis. Ut ut velit ex. Nam convallis malesuada maximus. Ut vehicula sem in rutrum facilisis. Vivamus ut mattis arcu. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris volutpat vehicula dolor eget pretium. Integer sodales tellus erat, ac tincidunt orci convallis sit amet. Curabitur auctor id neque in placerat. Proin cursus magna eget erat faucibus, ac molestie sapien viverra. Duis consectetur sagittis nunc nec gravida. Vestibulum lacinia eros at massa consequat facilisis. Phasellus ut purus vel nibh eleifend gravida. Nulla posuere egestas nunc vitae scelerisque.</p>
+      <p>Curabitur non imperdiet nibh, at commodo ipsum. Fusce bibendum id nibh vitae consequat. Proin nisi risus, cursus at eleifend eget, imperdiet vel dui. Vivamus sit amet tincidunt nibh. Suspendisse sagittis porttitor consequat. Vivamus eleifend leo ac est dapibus, id fermentum nisl dignissim. Morbi diam libero, vestibulum et congue in, sodales ac nunc. Donec venenatis nulla eget nisi congue, ac condimentum risus bibendum. Donec vel aliquam massa. Etiam odio justo, feugiat ut quam eget, fermentum aliquet arcu. Mauris maximus nisi sed eros tincidunt posuere sed in felis. Vivamus rutrum turpis leo, eget egestas tellus sagittis et. Aliquam convallis vel eros sed porta. Mauris ultricies purus sed lacus lobortis, vel tincidunt est porttitor. Pellentesque sed lacus tortor.</p>'
+  }) %>
+
+  <%= partial("modules/news-list", :locals => {
+    :extra_classes => '',
+    :paginator => false,
+    :items => 3,
+    :theme => 'white'
+  }) %>
+  
+
+</div>
+<%= partial("shared/footer") %>

@@ -1,0 +1,19 @@
+<%
+  extra_classes ||= ""
+  title ||= ""
+  date ||= ""
+  text ||= ""
+%>
+
+
+<div class="article-preview <%= extra_classes %>">
+  <div class="article-preview__image">
+    <%= image_tag lorem.image('289x183'), :class => 'article-preview__image__image' %>
+  </div>
+  <div class="article-preview__content">
+    <p class="date"><%= date %></p>
+    <p class="title"><%= title %> lorem ipsum</p>
+    <div class="text"><%= text %></div>
+    <a href="#" class="link">Leer más</a>
+  </div>
+</div>

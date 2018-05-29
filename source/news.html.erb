@@ -1,0 +1,29 @@
+---
+title: News
+layout: layout
+---
+<%= partial("shared/header", :locals => {
+  :extra_classes => '',
+  :active => 'news'
+}) %>
+
+<div class="content__wrapper">
+
+  <%= partial("modules/news-slider", :locals => {
+    :extra_classes => ''
+  }) %>
+
+  <%= partial("modules/news-list", :locals => {
+    :extra_classes => '',
+    :paginator => true,
+    :items => 12,
+    :theme => 'blue'
+  }) %>
+
+  <%= partial("modules/map", :locals => {
+    :extra_classes => ''
+  }) %>
+  
+
+</div>
+<%= partial("shared/footer") %>

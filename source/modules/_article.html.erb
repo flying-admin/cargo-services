@@ -1,0 +1,49 @@
+<%
+  extra_classes ||= ""
+  title ||= ""
+  image ||= ""
+  image_text ||= ""
+  date ||= ""
+  text ||= ""
+%>
+
+
+<div class="article <%= extra_classes %>">
+  <a href="#" class="article__back">
+    <span class="icon icon-arrow-left"></span>
+    Back
+  </a>
+  <p class="article__title"><%= title %></p>
+  <div class="article__image <%= image_text == '' ? 'full-width' : '' %>">
+    <%= image_tag image, :class => 'article__image__image' %>
+    <p class="article__image__text"><%= image_text %></p>
+  </div>
+  <p class="article__date"><%= date %></p>
+  <div class="article__text">
+    <%= text %>
+  </div>
+  <div class="article__social">
+    <ul>
+      <li class="share-text">
+        <span>
+          Compartir
+        </span>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon icon-facebook"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon icon-twitter"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon icon-gplus"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

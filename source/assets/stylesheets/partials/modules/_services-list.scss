@@ -3,6 +3,9 @@
   margin-top: -135px;
   margin-bottom: 57px;
   height: 135px;
+  @include media("<tablet") {
+    margin-top: -105px;
+  }
   @include media("<phablet") {
     display: none;
   }
@@ -31,6 +34,10 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      @include media("<tablet") {
+        padding: 15px 0;
+        height: 105px;
+      }
     }
     .icon {
       font-size: 40px;
@@ -43,33 +50,54 @@
       }
       &.icon-delivery-truck {
         font-size: 58px;
+        @include media("<tablet") {
+          font-size: 50px;
+        }
         &:before {
           height: 36px;
         }
       }
       &.icon-plane {
         font-size: 50px;
+        @include media("<tablet") {
+          font-size: 42px;
+        }
         &:before {
           height: 36px;
         }
       }
       &.icon-cross-trade {
         font-size: 45px;
+        @include media("<tablet") {
+          font-size: 37px;
+        }
       }
       &.icon-qr-code {
         font-size: 31px;
+        @include media("<tablet") {
+          font-size: 23px;
+        }
       }
       &.icon-customs {
         font-size: 41px;
+        @include media("<tablet") {
+          font-size: 33px;
+        }
         &:before {
           height: 31px;
         }
       }
       &.icon-warehouses {
         font-size: 37px;
+        @include media("<tablet") {
+          font-size: 29px;
+        }
       }
       &.icon-lock {
         font-size: 33px;
+        @include media("<tablet") {
+          font-size: 25px;
+        }
       }
     }
     .text {
@@ -79,8 +107,12 @@
       line-height: 18px;
       letter-spacing: 2px;
       margin-top: auto;
+      @include media("<desktop") {
+        font-size: 13px;
+      }
       @include media("<tablet") {
         font-size: 10px;
+        letter-spacing: 1px;
       }
     }
     &.active {

@@ -8,16 +8,12 @@
 
 <div class="error <%= extra_classes %>">
 
-  <div class="error">
+  <span class="icon icon-truck"></span>
 
-    <span class="icon icon-truck"></span>
-
-
-    <p class="title">
-      <%= title %>
-    </p>
-    
-    <%= partial("modules/button", :locals => button) %>
-    
-  </div>
+  <p class="title">
+    <%= title %>
+  </p>
+  
+  <%= partial("modules/button", :locals => button) %>
+  
 </div>

@@ -32,6 +32,8 @@
   .btn--primary {
     padding-left: 54px;
     padding-right: 54px;
-    width: 100%;
+    @include media("<phablet") {
+      width: 100%;
+    }
   }
 }

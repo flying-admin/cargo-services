@@ -54,6 +54,7 @@
 .icon-route:before,
 .icon-shield:before,
 .icon-ship:before,
+.icon-truck:before,
 .icon-twitter:before,
 .icon-warehouses:before,
 .icon-weight:before {
@@ -101,6 +102,7 @@
 .icon-route:before { content: "\f118"; }
 .icon-shield:before { content: "\f119"; }
 .icon-ship:before { content: "\f11a"; }
+.icon-truck:before { content: "\f121"; }
 .icon-twitter:before { content: "\f11b"; }
 .icon-warehouses:before { content: "\f11c"; }
 .icon-weight:before { content: "\f11d"; }
@@ -135,6 +137,7 @@ $font-cargo-icons-qr-code: "\f117";
 $font-cargo-icons-route: "\f118";
 $font-cargo-icons-shield: "\f119";
 $font-cargo-icons-ship: "\f11a";
+$font-cargo-icons-truck: "\f121";
 $font-cargo-icons-twitter: "\f11b";
 $font-cargo-icons-warehouses: "\f11c";
 $font-cargo-icons-weight: "\f11d";

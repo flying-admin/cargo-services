@@ -1,0 +1,23 @@
+<%
+  extra_classes ||= ""
+  title ||= ""
+  icon ||= ""
+  button ||= ""
+%>
+
+
+<div class="error <%= extra_classes %>">
+
+  <div class="error">
+
+    <span class="icon icon-truck"></span>
+
+
+    <p class="title">
+      <%= title %>
+    </p>
+    
+    <%= partial("modules/button", :locals => button) %>
+    
+  </div>
+</div>

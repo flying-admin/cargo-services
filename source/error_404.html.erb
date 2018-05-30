@@ -1,0 +1,25 @@
+---
+title: Error 404
+layout: layout
+---
+<%= partial("shared/header", :locals => {
+  :extra_classes => '',
+  :active => ''
+}) %>
+
+<div class="content__wrapper">
+
+  <%= partial("modules/error", :locals => {
+    :extra_classes => '',
+    :title => 'Error 404',
+    :icon => 'icon-truck',
+    :button => {
+                  :extra_classes => 'btn--primary',
+                  :extra_attributes => '',
+                  :type => 'link',
+                  :text => 'Volver a la home',
+                  :link => 'home'
+                }
+  }) %>
+
+</div>

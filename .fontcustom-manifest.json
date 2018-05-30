@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "77ddc98afdee61145edc1772ba71897a64c2b7293cdeeafde02bdc95b1e4467e",
-    "current": "77ddc98afdee61145edc1772ba71897a64c2b7293cdeeafde02bdc95b1e4467e"
+    "previous": "b0794af5e6254cf16263e05a3303029aa61387655a15d7667ed5b26d47275086",
+    "current": "b0794af5e6254cf16263e05a3303029aa61387655a15d7667ed5b26d47275086"
   },
   "fonts": [
     "./source/assets/fonts/cargo-icons.ttf",
@@ -130,6 +130,10 @@
     "ship": {
       "codepoint": 61722,
       "source": "./source/assets/images/icons/ship.svg"
+    },
+    "truck": {
+      "codepoint": 61729,
+      "source": "./source/assets/images/icons/truck.svg"
     },
     "twitter": {
       "codepoint": 61723,

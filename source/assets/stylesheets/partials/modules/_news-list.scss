@@ -88,14 +88,23 @@
       &.prev {
         font-size: 16px;
         line-height: 32px;
+        a {
+          text-decoration: none;
+          color: $primary;
+        }
       }
       &.next {
         font-size: 16px;
         line-height: 32px;
+        a {
+          text-decoration: none;
+          color: $primary;
+        }
       }
       &.page {
         font-family: $font_title;
         a {
+          color: $primary;
           display: block;
           padding: 0 10px;
           text-decoration: none;

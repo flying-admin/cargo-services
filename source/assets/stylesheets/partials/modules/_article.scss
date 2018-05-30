@@ -93,6 +93,10 @@
       justify-content: center;
       align-items: center;
       li {
+        margin: 0 5px;
+        a {
+          text-decoration: none;
+        }
         &:not(.share-text) {
           width: 46px;
           height: 46px;
@@ -100,7 +104,6 @@
           background-color: $inputgrey;
           text-align: center;
         }
-        margin: 0 5px;
         &.share-text {
           span {
             display: inline-block;

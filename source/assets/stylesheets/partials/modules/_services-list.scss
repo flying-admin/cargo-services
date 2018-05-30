@@ -14,15 +14,7 @@
   }
   &__item {
     background-color: $secondary;
-    width: calc(100% / 8);
-    @include media("<tablet") {
-      width: 135px;
-      width: calc(100% / 4);
-    }
-    @include media("<phablet") {
-      width: 135px;
-      width: calc(100% / 2);
-    }
+    width: calc(100% / 9);
     a {
       color: $white;
       text-decoration: none;

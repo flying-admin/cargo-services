@@ -1,0 +1,37 @@
+.error {
+  height: calc(100vh - 100px);
+  text-align: center;
+  color: $white;
+  background-color: $corporative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include media("<phablet") {
+    height: calc(100vh - 71px);
+  }
+  .icon {
+    font-size: 296px;
+    @include media("<phablet") {
+      font-size: 150px;
+    }
+  }
+  .title {
+    font-family: $font_title;
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 80px;
+    letter-spacing: 15px;
+    margin-bottom: 80px;
+    @include media("<phablet") {
+      font-size: 50px;
+      letter-spacing: 8px;
+      margin-bottom: 30px;
+    }
+  }
+  .btn--primary {
+    padding-left: 54px;
+    padding-right: 54px;
+    width: 100%;
+  }
+}

@@ -189,9 +189,11 @@
         background-position: center;
         width: 100%;
         height: calc(100vh - 100px - 50px);
+        min-height: 540px;
         position: relative;
         @include media("<phablet") {
           height: calc(100vh - 71px - 50px);
+          min-height: 360px;
         }
         &:before {
           content: '';

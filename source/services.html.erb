@@ -11,7 +11,7 @@ layout: layout
 
   <%= partial("modules/hero", :locals => {
     :extra_classes => '',
-    :title => 'A donde quieras desde donde quieras',
+    :title => 'La ingeniería del transporte',
     :text => 'Desde 1988',
     :image => 'services/hero.jpg'
   }) %>
@@ -227,13 +227,25 @@ layout: layout
     :extra_classes => '',
     :title => 'Seguros',
     :content => '<div class="content-block">' +
+                  '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>' +
+                  '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>' +
+                '</div>',
+    :image => 'services/services08.jpg',
+    :contentPosition => 'right',
+    :id => 'consultancy'
+  }) %>
+
+  <%= partial("modules/content-image", :locals => {
+    :extra_classes => '',
+    :title => 'Seguros',
+    :content => '<div class="content-block">' +
                   '<p>Cargo Services ofrece la posibilidad de asegurar cualquier mercancía transportada. Los seguros que gestionamos cubren cualquier pérdida / robo / daño a la mercancía en cualquier punto del transporte desde lugar de origen hasta lugar de entrega.</p>' +
                   '<p>Las compañías de transporte, cada una según la ley marcada, tienen sus seguros de responsabilidad civil limitada, es por esto que los clientes normalmente no solicitan la contratación de unos que tengan una cobertura total.</p>' +
                   '<p>La cobertura es la que para ello marcan las ICC Clauses (Cargo Clauses, Strike Clauses y War Clauses). El limite de cobertura recomendada es del 110% sobre el valor CFR de la mercancía.</p>' +
                   '<p>A petición del cliente se puede gestionar la contratación de seguros especiales para el transporte de mercancías.</p>' +
                 '</div>',
     :image => 'services/services08.jpg',
-    :contentPosition => 'right',
+    :contentPosition => 'left',
     :id => 'insurance'
   }) %>
 

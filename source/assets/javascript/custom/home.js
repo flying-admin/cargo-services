@@ -49,23 +49,25 @@ $(document).ready(function(){
   }
 
   if ( $('.map__list__slider').length > 0 ) {
-    var sliderHome = new Swiper('.map__list__slider .swiper-container', {
-      spaceBetween: 60,
-      slidesPerView: 4,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      },
-      breakpoints: {
-        1024: {
-          slidesPerView: 3
-        },
-        767: {
-          slidesPerView: 1,
-          autoHeight: true
-        }
-      },
-    });
+    if ( !$('.map').is('.contact-page') ) {
 
+      var sliderHome = new Swiper('.map__list__slider .swiper-container', {
+        spaceBetween: 60,
+        slidesPerView: 4,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 3
+          },
+          767: {
+            slidesPerView: 1,
+            autoHeight: true
+          }
+        },
+      });
+    }
   }
 });

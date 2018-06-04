@@ -33,6 +33,7 @@
 .icon-arrow-right:before,
 .icon-check:before,
 .icon-close:before,
+.icon-consultancy:before,
 .icon-cross-trade:before,
 .icon-customs:before,
 .icon-delivery-truck:before,
@@ -81,6 +82,7 @@
 .icon-arrow-right:before { content: "\f104"; }
 .icon-check:before { content: "\f105"; }
 .icon-close:before { content: "\f11e"; }
+.icon-consultancy:before { content: "\f122"; }
 .icon-cross-trade:before { content: "\f106"; }
 .icon-customs:before { content: "\f107"; }
 .icon-delivery-truck:before { content: "\f108"; }
@@ -116,6 +118,7 @@ $font-cargo-icons-arrow-left: "\f103";
 $font-cargo-icons-arrow-right: "\f104";
 $font-cargo-icons-check: "\f105";
 $font-cargo-icons-close: "\f11e";
+$font-cargo-icons-consultancy: "\f122";
 $font-cargo-icons-cross-trade: "\f106";
 $font-cargo-icons-customs: "\f107";
 $font-cargo-icons-delivery-truck: "\f108";

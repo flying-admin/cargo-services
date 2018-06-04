@@ -85,6 +85,12 @@
           font-size: 29px;
         }
       }
+      &.icon-consultancy {
+        font-size: 37px;
+        @include media("<tablet") {
+          font-size: 29px;
+        }
+      }
       &.icon-lock {
         font-size: 33px;
         @include media("<tablet") {

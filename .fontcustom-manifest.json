@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "b0794af5e6254cf16263e05a3303029aa61387655a15d7667ed5b26d47275086",
-    "current": "b0794af5e6254cf16263e05a3303029aa61387655a15d7667ed5b26d47275086"
+    "previous": "b96d7ac24dcb80cbc3113b7d89ab4d6643d7baccc71b9538b6ada2d67e24b57b",
+    "current": "b96d7ac24dcb80cbc3113b7d89ab4d6643d7baccc71b9538b6ada2d67e24b57b"
   },
   "fonts": [
     "./source/assets/fonts/cargo-icons.ttf",
@@ -46,6 +46,10 @@
     "close": {
       "codepoint": 61726,
       "source": "./source/assets/images/icons/close.svg"
+    },
+    "consultancy": {
+      "codepoint": 61730,
+      "source": "./source/assets/images/icons/consultancy.svg"
     },
     "cross-trade": {
       "codepoint": 61702,

@@ -1,7 +1,24 @@
 .map {
   &__map {
     width: 100%;
+    height: 40vw;
     margin: 0 auto;
+
+    @include media('<desktop'){
+      height: 50vw;
+    }
+
+    @include media('<tablet'){
+      height: 60vw;
+    }
+
+    @include media('<phablet'){
+      height: 80vw;
+    }
+
+    @include media('<mobile'){
+      height: 100vw;
+    }
   }
   &__list {
     padding: 0 60px 20px 60px;

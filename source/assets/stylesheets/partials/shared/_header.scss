@@ -34,7 +34,14 @@
       top: 30px;
     }
     &__logo {
-      width: 100%;
+      width: auto;
+      height: 100%;
+      max-height: 80px;
+      @include media("<phablet") {
+        // height: auto;
+        // width: 100%;
+        max-height: 37px;
+      }
     }
   }
 

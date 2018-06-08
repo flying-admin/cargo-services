@@ -4,10 +4,11 @@ $(function(){
   // Clusters Docs: https://htmlpreview.github.io/?https://github.com/googlemaps/v3-utility-library/blob/master/markerclustererplus/docs/reference.html
 
   if ( $('.map').length > 0 ) {
-    google.maps.event.addDomListener(window, 'load', initMap);
+    // google.maps.event.addDomListener(window, 'load', initMap);
   }
 
 });
+
 var map, markerImg, markerShape, clusterImg, clusterShape, locations;
 
 function initMap(){

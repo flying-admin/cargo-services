@@ -48,8 +48,6 @@ $(document).ready(function(){
     });
 
     $(window).on('scroll', function(){
-      console.log($blocks);
-      console.log($($blocks[0]));
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       for (var i = 0; i < $blocks.length; i++){

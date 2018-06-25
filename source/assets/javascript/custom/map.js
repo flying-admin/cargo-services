@@ -11,6 +11,74 @@ $(function(){
 
 var map, markerImg, markerShape, clusterImg, clusterShape, locations;
 
+
+var myPosLat, myPosLong, myip;
+var xmlhttpmyip = new XMLHttpRequest();
+var urlmyip = "https://api.ipgeolocation.io/getip";
+
+xmlhttpmyip.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myipResp = JSON.parse(this.responseText);
+    myip = myipResp.ip;
+
+
+    var xmlhttpgeo = new XMLHttpRequest();
+    var urlgeo = "https://api.ipgeolocation.io/ipgeo?ip=" + myip + "&apiKey=4629ad0028244781981d43d142e9e6fa";
+
+    xmlhttpgeo.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var geoResp = JSON.parse(this.responseText);
+
+        myPosLat = geoResp.latitude;
+        myPosLong = geoResp.longitude;
+
+        $(document).ready(function() {
+          var distances = [];
+
+          for ( loc in locations ) {
+            place = locations[loc];
+            distances[place.tag] = distance(myPosLat, myPosLong, place.lat, place.lng);
+          }
+
+          var closestLocation = minValAssociative(distances);
+
+          var closestPlace = locations.find((o => o.tag === closestLocation));
+
+          $('.header .phone-number a').attr('href', 'tel:' + closestPlace.tel);
+          $('.header .phone-number .text').text(closestPlace.tel);
+
+          $('.header .mail-address a').attr('href', 'mailto:' + closestPlace.mail);
+          $('.header .mail-address .text').text(closestPlace.mail);
+
+          $('.localiza-oficina').on('click', function(ev) {
+            ev.preventDefault();
+            map.setCenter({lat: parseFloat(myPosLat), lng: parseFloat(myPosLong)});
+          });
+
+        });
+      }
+
+    };
+    xmlhttpgeo.open("GET", urlgeo, true);
+    xmlhttpgeo.send();
+  }
+
+};
+xmlhttpmyip.open("GET", urlmyip, true);
+xmlhttpmyip.send();
+
+locations = [
+  {lat: 40.404867, lng: -3.673120,  tag: 'madrid',    tel: '+34 914 341 820',  mail: 'infomad@cargoservicesgroup.com'}, // Madrid
+  {lat: 41.389582, lng: 2.173952,   tag: 'barcelona', tel: '+34 933 019 633',  mail: 'infobcn@cargoservicesgroup.com'}, // Barcelona
+  {lat: 42.810118, lng: -1.660274,  tag: 'pamplona',  tel: '+34 948 172 245',  mail: 'infopna@cargoservicesgroup.com'}, // Pamplona
+  {lat: 54.511266, lng: 18.541763,  tag: 'polonia',   tel: '+48 58 668 44 18',  mail: 'infopol@cargoservicesgroup.com'}, // Polonia
+  {lat: 19.410481, lng: -99.181033, tag: 'mexico',    tel: '+52 55 5543 2007', mail: 'comercial@cargoservicesgroup.com.mx'}, // Mexico
+  {lat: 8.983290, lng: -79.515534,  tag: 'panama',    tel: '+507 303 2320',   mail: 'infopan@cargoservicesgroup.com'}, // Panama
+  {lat: 23.119717, lng: -82.429884, tag: 'cuba',      tel: '+537 204 7211',   mail: 'n.carnota@cargoservicesgroup.cu'} // Cuba
+];
+
+
+
 function initMap(){
 
   markerImg = {
@@ -28,16 +96,6 @@ function initMap(){
 
   clusterImg = './../assets/images/content/cluster';
   clusterExt = 'svg';
-
-  locations = [
-    {lat: 40.404867, lng: -3.673120}, // Madrid
-    {lat: 41.389582, lng: 2.173952}, // Barcelona
-    {lat: 42.810118, lng: -1.660274}, // Pamplona
-    {lat: 54.511266, lng: 18.541763}, // Polonia
-    {lat: 19.410481, lng: -99.181033}, // Mexico
-    {lat: 8.983290, lng: -79.515534}, // Panama
-    {lat: 23.119717, lng: -82.429884} // Cuba
-  ];
 
   initContactMap();
 }
@@ -123,4 +181,36 @@ function boundsMarkers(marcadores){
   }
   map.fitBounds(bounds); // Adjust map view to contain all markers
   map.panTo(bounds.getCenter()); // Fix to avoid markers disappearence (happens sometimes with map.setCenter and map.fitBounds)
+}
+
+
+function minValAssociative(arr) {
+  var minValue;
+  var minKey;
+  for (key in arr) {
+    if (minValue != undefined) {
+      if ( arr[key] < minValue ) {
+        minValue = arr[key];
+        minKey = key;
+      }
+    } else {
+      minValue = arr[key];
+      minKey = key;
+    }
+  }
+  return minKey;
+}
+
+function distance(lat1, lon1, lat2, lon2, unit) {
+  var radlat1 = Math.PI * lat1/180
+  var radlat2 = Math.PI * lat2/180
+  var theta = lon1-lon2
+  var radtheta = Math.PI * theta/180
+  var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+  dist = Math.acos(dist)
+  dist = dist * 180/Math.PI
+  dist = dist * 60 * 1.1515
+  if (unit=="K") { dist = dist * 1.609344 }
+  if (unit=="N") { dist = dist * 0.8684 }
+  return dist
 }

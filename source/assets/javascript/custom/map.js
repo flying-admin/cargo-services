@@ -42,7 +42,7 @@ xmlhttpmyip.onreadystatechange = function() {
 
           var closestLocation = minValAssociative(distances);
 
-          var closestPlace = locations.find((o => o.tag === closestLocation));
+          var closestPlace = locations.find(function(o) { if (o.tag === closestLocation) { return o; } });
 
           $('.header .phone-number a').attr('href', 'tel:' + closestPlace.tel);
           $('.header .phone-number .text').text(closestPlace.tel);
@@ -52,7 +52,7 @@ xmlhttpmyip.onreadystatechange = function() {
 
           $('.localiza-oficina').on('click', function(ev) {
             ev.preventDefault();
-            map.setCenter({lat: parseFloat(myPosLat), lng: parseFloat(myPosLong)});
+            map.setCenter({lat: parseFloat(closestPlace.lat), lng: parseFloat(closestPlace.lng)});
           });
 
         });

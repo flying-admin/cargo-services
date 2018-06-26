@@ -32,7 +32,7 @@ $(window).on("load", function(){
       var headerOffset = $('header.header').height();
       var target = $($(this).data('scroll'));
       var offsetTop = parseInt($($(this).data('offsettop'))[0]) > 0 ? parseInt($($(this).data('offsettop'))[0]) : 0;
-      console.log(offsetTop);
+
       var distance = target.offset().top - headerOffset - offsetTop;
 
       $('html, body').animate({

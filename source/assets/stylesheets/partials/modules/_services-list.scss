@@ -26,6 +26,8 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+
+      transition: all 0.5s;
       @include media("<tablet") {
         padding: 15px 0;
         height: 105px;
@@ -36,6 +38,7 @@
       height: 45px;
       line-height: 45px;
       display: block;
+      transition: all 0.5s;
       &:before {
         vertical-align: text-bottom;
         line-height: 45px;
@@ -105,6 +108,7 @@
       line-height: 18px;
       letter-spacing: 2px;
       margin-top: auto;
+      transition: all 0.5s;
       @include media("<desktop") {
         font-size: 13px;
       }
@@ -133,6 +137,45 @@
       margin: auto;
       background-color: $secondary;
       z-index: 99;
+    }
+    &.services-list--small {
+      .services-list__item {
+        a {
+          padding: 15px 0;
+          height: 75px;
+        }
+        .icon {
+          &.icon-delivery-truck {
+            font-size: 50px;
+          }
+          &.icon-plane {
+            font-size: 42px;
+          }
+          &.icon-cross-trade {
+            font-size: 37px;
+          }
+          &.icon-qr-code {
+            font-size: 23px;
+          }
+          &.icon-customs {
+            font-size: 33px;
+          }
+          &.icon-warehouses {
+            font-size: 29px;
+          }
+          &.icon-consultancy {
+            font-size: 29px;
+          }
+          &.icon-lock {
+            font-size: 25px;
+          }
+        }
+        .text {
+          height: 0;
+          overflow: hidden;
+          margin-top: 0;
+        }
+      }
     }
   }
 }

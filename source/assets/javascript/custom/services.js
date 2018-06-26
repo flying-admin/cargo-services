@@ -1,10 +1,18 @@
 $(document).ready(function(){
   if ( $('.services-list').length > 0 ) {
+    var scrollY;
     $(window).on("scroll", function() {
-      var scrollY = $(this).scrollTop();
-
-
       var submenu = $('.services-list');
+
+      if ( $(this).scrollTop() > scrollY && submenu.hasClass('services-list--sticky') && !submenu.hasClass('services-list--small') ) {
+        submenu.addClass('services-list--small');
+      } else if ( $(this).scrollTop() < scrollY && submenu.hasClass('services-list--sticky') && submenu.hasClass('services-list--small') ) {
+        submenu.removeClass('services-list--small');
+      }
+
+      scrollY = $(this).scrollTop();
+
+
       if (submenu.length) {
         var submenuOffset = (submenu.offset().top - 100);
         if (scrollY > submenuOffset && !submenu.hasClass('services-list--sticky')) {

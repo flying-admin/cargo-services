@@ -141,6 +141,18 @@ layout: layout
   <%= partial("modules/map", :locals => {
     :extra_classes => ''
   }) %>
+  
+
+  <%= partial("modules/modal-form", :locals => {
+    :modal_selector => 'budget-modal',
+    :extra_classes => 'budget-modal',
+    :title => '<p class="small">' +
+                'Solicita' +
+              '</p>' +
+              '<p class="title">' +
+                'Presupuesto gratuito' +
+              '</p>'
+  }) %>
 
 </div>
 <%= partial("shared/footer") %>

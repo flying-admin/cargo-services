@@ -21,5 +21,17 @@ layout: layout
                   :link => 'home'
                 }
   }) %>
+  
+
+  <%= partial("modules/modal-form", :locals => {
+    :modal_selector => 'budget-modal',
+    :extra_classes => 'budget-modal',
+    :title => '<p class="small">' +
+                'Solicita' +
+              '</p>' +
+              '<p class="title">' +
+                'Presupuesto gratuito' +
+              '</p>'
+  }) %>
 
 </div>

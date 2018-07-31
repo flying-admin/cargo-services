@@ -1,0 +1,78 @@
+<%
+  modal_selector ||= 'modal_selector'
+  extra_classes ||= ""
+  title ||= ""
+  content ||= ""
+%>
+
+<div class="modal <%= extra_classes %>" data-modal="<%= modal_selector %>" data-modal-close>
+  <div class="modal__dialog">
+    <div class="modal__dialog__close" data-modal-close></div>
+    <div class="modal__dialog__wrapper">
+      <div class="modal__dialog__wrapper__title"><%= title %></div>
+        <div class="modal__dialog__wrapper__content">
+          <div class="budget-modal__wrap__form">
+            <form>
+              <%= partial("modules/input", :locals => {
+                :extra_classes => '',
+                :extra_attributes => '',
+                :label => '<span class="icon icon-location"></span>',
+                :placeholder => 'Origen',
+                :value => '',
+                :name => 'estimation-origin',
+                :type => 'text',
+
+              }) %>
+
+              <%= partial("modules/input", :locals => {
+                :extra_classes => '',
+                :extra_attributes => '',
+                :label => '<span class="icon icon-location"></span>',
+                :placeholder => 'Destino',
+                :value => '',
+                :name => 'estimation-destination',
+                :type => 'text',
+
+              }) %>
+
+              <%= partial("modules/input", :locals => {
+                :extra_classes => '',
+                :extra_attributes => '',
+                :label => '<span class="icon icon-weight"></span>',
+                :placeholder => '¿Cuánto pesa tu envío?',
+                :value => '',
+                :name => 'estimation-weight',
+                :type => 'text',
+
+              }) %>
+
+              <%= partial("modules/input", :locals => {
+                :extra_classes => '',
+                :extra_attributes => '',
+                :label => '<span class="icon icon-mail"></span>',
+                :placeholder => 'Email',
+                :value => '',
+                :name => 'estimation-mail',
+                :type => 'mail',
+
+              }) %>
+
+              <%= partial("modules/button", :locals => {
+                :extra_classes => 'btn--primary btn--block',
+                :extra_attributes => '',
+                :type => 'button',
+                :text => 'Pídenos presupuesto',
+                :link => '',
+
+              }) %>
+
+            </form>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
